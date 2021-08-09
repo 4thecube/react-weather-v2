@@ -162,3 +162,50 @@ input[type="text"] {
     }
   }
 }
+
+@media screen and (min-width: 569px) and (max-width: 1320px) {
+  .big-search {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      input {
+        font-size: 2.5vw;
+      }
+      .s-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        button {
+          width: 30vw;
+          margin: 0;
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .big-search {
+    width: 75vw;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      input {
+        width: 90%;
+      }
+      .s-button-container {
+        width: 90%;
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

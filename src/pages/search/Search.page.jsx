@@ -3,11 +3,7 @@ import React from "react";
 import Search from "../../components/search/Search.component";
 
 const SearchPage = ({ fetch }) => {
-  return (
-    <div>
-      <Search fetch={fetch} big />
-    </div>
-  );
+  return <Search fetch={fetch} big />;
 };
 
 export default SearchPage;
