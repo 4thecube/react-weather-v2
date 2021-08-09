@@ -1,0 +1,16 @@
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f6f9;
+}
+
+@media screen and (max-width: 420px) {
+  .app {
+    height: auto;
+    width: auto;
+  }
+}

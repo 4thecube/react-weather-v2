@@ -1,0 +1,100 @@
+.current-wind {
+  .c-wind-title {
+    color: grey;
+    font-size: 24px;
+  }
+
+  .c-wind-data {
+    margin-left: 1.2vw;
+    // font-size: 2.5vw;
+    font-size: 42px;
+    .c-wind-measure {
+      font-size: 1vw;
+    }
+  }
+
+  .c-wind-direction {
+    width: 100%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .c-wind-direction-icon {
+      //   border: 1px solid black;
+      border-radius: 100%;
+      img {
+        width: 1.5vw;
+        height: 4vh;
+        filter: invert(55%) sepia(45%) saturate(668%) hue-rotate(173deg)
+          brightness(93%) contrast(90%);
+      }
+
+      .rotate-135 {
+        transform: rotate(-135deg);
+        // animation-name: rotate-135;
+        // animation-duration: 2s;
+      }
+      .rotate135 {
+        transform: rotate(135deg);
+        // animation-name: rotate135;
+        // animation-duration: 2s;
+      }
+      .rotate45 {
+        transform: rotate(45deg);
+        // animation-name: rotate45;
+        // animation-duration: 2s;
+      }
+      .rotate-45 {
+        transform: rotate(-45deg);
+        // animation-name: rotate-45;
+        // animation-duration: 2s;
+      }
+      .rotate180 {
+        transform: rotate(180deg);
+        // animation-name: rotate180;
+        // animation-duration: 2s;
+      }
+      .rotate90 {
+        transform: rotate(90deg);
+        // animation-name: rotate90;
+        // animation-duration: 2s;
+      }
+      .rotate-90 {
+        transform: rotate(-90deg);
+        // animation-name: rotate90;
+        // animation-duration: 2s;
+      }
+      .rotate225 {
+        transform: rotate(225deg);
+        // animation-name: rotate225;
+        // animation-duration: 2s;
+      }
+    }
+    .c-wind-direction-data {
+      margin-left: 0.5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .current-wind {
+    .c-wind-title {
+      font-size: 14px;
+    }
+    .c-wind-data {
+      font-size: 24px;
+      .c-wind-measure {
+        font-size: 14px;
+      }
+    }
+    .c-wind-direction {
+      font-size: 14px;
+      .c-wind-direction-icon {
+        img {
+          width: 20px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

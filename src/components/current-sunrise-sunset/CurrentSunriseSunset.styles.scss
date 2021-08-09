@@ -1,0 +1,41 @@
+.current-sunrise-sunset {
+  font-size: 24px;
+  .c-ss-title {
+    color: grey;
+    margin-bottom: 20px;
+  }
+
+  .c-ss-sunrise,
+  .c-ss-sunset {
+    width: 100%;
+    .icon {
+      width: 5vw;
+      height: 5vh;
+    }
+  }
+  .c-ss-field {
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .current-sunrise-sunset {
+    .c-ss-title {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .c-ss-sunrise,
+    .c-ss-sunset {
+      .c-ss-field {
+        font-size: 18px;
+        .icon {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
